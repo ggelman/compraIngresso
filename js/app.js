@@ -3,11 +3,6 @@ function comprar() {
     let qtdInput = document.getElementById('qtd');
     let quantidade = parseInt(document.getElementById('qtd').value);
 
-    if (quantidade <= 0) {
-        alert('Por favor, insira uma quantidade válida.');
-        return;
-    }
-
     if(tipo.value == 'pista') {
         comprarPista(quantidade);
     } else if(tipo.value == 'superior') {
